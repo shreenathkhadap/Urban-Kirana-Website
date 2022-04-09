@@ -1,0 +1,23 @@
+{% load static %}<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-5 py-3 my-0" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+  <div class="container-fluid">
+    <img src={% static 'UUK.jpg' %} width="255px" height="70px" style="border-radius: 15px;" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/ ">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active " href="/contact">Contact Us </a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+{% block navbar %}{% endblock  %} </nav>
